@@ -2,7 +2,7 @@ import 'package:surrealdb_dart/surrealdb_dart.dart';
 import 'package:test/test.dart';
 
 void main() {
-  final url = Uri.parse('wss://dei-surrealdb.fly.dev/rpc');
+  final url = Uri.parse('ws://0.0.0.0:8000/rpc');
 
   test('create user', () async {
     final db = SurrealDB.connect(url, onConnected: (db) async {
