@@ -1,6 +1,6 @@
 name: surrealdb_dart
 description: The Flutter SurrealDB package is a powerful integration for Flutter, built upon the foundation of surrealdb, the official SurrealDB library.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/allou-deyforyou/surrealdb.dart
 repository: https://github.com/allou-deyforyou/surrealdb.dart
 
