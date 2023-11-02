@@ -1,8 +1,10 @@
+import 'dart:async';
+
 import 'package:websocket_universal/websocket_universal.dart';
 
 import 'types.dart';
 
-typedef SurrealCallback = Future<void> Function(SurrealDB db);
+typedef SurrealCallback = void Function(SurrealDB db);
 
 class SurrealDB {
   SurrealDB._(
@@ -42,7 +44,7 @@ class SurrealDB {
   void _onConnected(SurrealCallback callback) {
     _handler.socketStateStream.listen((state) {
       if (state.status == SocketStatus.connected) {
-        Future.microtask(() {
+        Timer.run(() {
           return callback(this);
         });
       }

@@ -2,7 +2,7 @@ import 'package:surrealdb_dart/surrealdb_dart.dart';
 import 'package:test/test.dart';
 
 void main() {
-  final url = Uri.parse('ws://0.0.0.0:8000/rpc');
+  final url = Uri.parse('ws://0.0.0.0:8080/rpc');
 
   test('create user', () async {
     final db = SurrealDB.connect(url, onConnected: (db) async {
@@ -24,7 +24,7 @@ void main() {
   });
 
   test('query user', () async {
-    final db = SurrealDB.connect(url, onConnected: (db) {
+    final db = SurrealDB.connect(url, onConnected: (db) async {
       return db.use(namespace: 'surrealdb', database: 'dart');
     });
     final data = await db.query('SELECT * FROM user;');
