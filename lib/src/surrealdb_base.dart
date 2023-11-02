@@ -11,6 +11,7 @@ class SurrealDB {
     this._handler,
     SurrealCallback? callback,
   ) {
+    _handler.connect().ignore();
     if (callback != null) {
       _onConnected(callback);
     }
