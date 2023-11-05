@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:websocket_universal/websocket_universal.dart';
 
 import 'types.dart';
@@ -11,7 +9,6 @@ class SurrealDB {
     this._handler,
     SurrealCallback? callback,
   ) {
-    _handler.connect().ignore();
     if (callback != null) {
       _onConnected(callback);
     }
@@ -45,9 +42,7 @@ class SurrealDB {
   void _onConnected(SurrealCallback callback) {
     _handler.socketStateStream.listen((state) {
       if (state.status == SocketStatus.connected) {
-        Timer.run(() {
-          return callback(this);
-        });
+        Future.microtask(() => callback(this));
       }
     });
   }
