@@ -1,0 +1,8 @@
+name: SurrealDBCoreBindings
+output: "lib/src/ffi/web_bindings.dart"
+ffi-native:
+headers:
+  entry-points:
+    - "src/surrealdb_core-dart.h"
+  include-directives:
+    - "**surrealdb_core-dart.h"
