@@ -1,3 +1,7 @@
+## 2.0.0
+
+- Refactory code.
+
 ## 1.0.3
 
 - Fix bug.
