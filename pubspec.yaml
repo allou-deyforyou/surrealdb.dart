@@ -8,7 +8,7 @@ environment:
   sdk: ^3.1.4
 
 dependencies:
-  websocket_universal: ^1.1.1
+  web_socket_client: ^0.1.5
 
 dev_dependencies:
   lints: ^2.0.0

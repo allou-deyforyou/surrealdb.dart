@@ -98,12 +98,6 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "json_annotation",
-      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/json_annotation-4.8.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
       "name": "lints",
       "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
@@ -266,20 +260,26 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "web_socket_channel",
-      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "name": "web",
+      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/web-0.5.1",
       "packageUri": "lib/",
-      "languageVersion": "2.15"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "web_socket_client",
+      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/web_socket_client-0.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "webkit_inspection_protocol",
       "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "websocket_universal",
-      "rootUri": "file:///Users/deyforyou/.pub-cache/hosted/pub.dev/websocket_universal-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -296,7 +296,10 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-11-05T14:18:51.443099Z",
+  "generated": "2024-11-30T17:38:51.278170Z",
   "generator": "pub",
-  "generatorVersion": "3.1.5"
+  "generatorVersion": "3.5.4",
+  "flutterRoot": "file:///Users/deyforyou/Development/flutter",
+  "flutterVersion": "3.24.5",
+  "pubCache": "file:///Users/deyforyou/.pub-cache"
 }

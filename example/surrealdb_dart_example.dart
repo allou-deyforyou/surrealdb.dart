@@ -3,7 +3,7 @@ import 'package:surrealdb_dart/surrealdb_dart.dart';
 void main() async {
   try {
     // Connect to the database
-    final db = SurrealDB.connect(Uri.parse('wss://dei-surrealdb.fly.dev/rpc'));
+    final db = Surreal.connect(Uri.parse('wss://dei-surrealdb.fly.dev/rpc'));
 
     // Signin as a namespace, database, or root user
     await db.signin(
